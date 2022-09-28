@@ -28,7 +28,7 @@ def LS_solve(data):
     return b;
 
 #从CSV文件中读入数据
-filepath = "D:\何一蔷\RoboMaster\Task1\data.csv"
+filepath = "data.csv"
 df = pd.read_csv(filepath,sep = ",",names=['X1','X2','X3','Y'])
 #构造常数特征项 X0 = ones(n,1)
 X0 = [1 for index in range(len(df))]
